@@ -2,6 +2,7 @@ package com.selvi.tests;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,16 +15,16 @@ public class AmazonTest {
 
     @BeforeTest
     public void setupSelenium(){
-        driver = new FirefoxDriver();
+    	System.setProperty("webdriver.chrome.driver", "F:\\Selenium Projects\\Drivers\\chromedriver.exe");	
+		driver = new ChromeDriver(); 
     }
 
     @Test
     public void testSearch(){
-        driver.get("http://www.amazon.com");
-		
+        driver.get("http://www.amazon.com");		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		Assert.assertEquals(driver.getTitle(), "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more");
+		Assert.assertEquals(driver.getTitle(), "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more");
     }
 
     @AfterTest

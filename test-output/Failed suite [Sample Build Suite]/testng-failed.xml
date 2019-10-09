@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Failed suite [Sample Build Suite]]">
+  <test name="Sample Build test(failed)(failed)" preserve-order="true">
+    <classes>
+      <class name="com.selvi.tests.AppTest">
+        <methods>
+          <include name="setupSelenium"/>
+          <include name="closeSelenium"/>
+        </methods>
+      </class>
+      <class name="com.selvi.tests.AmazonTest">
+        <methods>
+          <include name="testSearch"/>
+          <include name="closeSelenium"/>
+          <include name="setupSelenium"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

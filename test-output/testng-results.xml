@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sample Build Suite" duration-ms="29967" started-at="2019-10-03T07:31:20Z" finished-at="2019-10-03T07:31:49Z">
+    <groups>
+    </groups>
+    <test name="Sample Build test" duration-ms="29967" started-at="2019-10-03T07:31:20Z" finished-at="2019-10-03T07:31:49Z">
+      <class name="com.selvi.tests.AppTest">
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.selvi.tests.AppTest@66d2e7d9]" name="testSearch" duration-ms="5982" started-at="2019-10-03T07:31:30Z" finished-at="2019-10-03T07:31:36Z">
+        </test-method>
+      </class>
+      <class name="com.selvi.tests.AmazonTest">
+        <test-method status="PASS" signature="setupSelenium()[pri:0, instance:com.selvi.tests.AmazonTest@1efbd816]" name="setupSelenium" is-config="true" duration-ms="6793" started-at="2019-10-03T07:31:20Z" finished-at="2019-10-03T07:31:26Z">
+        </test-method>
+        <test-method status="PASS" signature="setupSelenium()[pri:0, instance:com.selvi.tests.AppTest@66d2e7d9]" name="setupSelenium" is-config="true" duration-ms="3663" started-at="2019-10-03T07:31:26Z" finished-at="2019-10-03T07:31:30Z">
+        </test-method>
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:com.selvi.tests.AmazonTest@1efbd816]" name="testSearch" duration-ms="10656" started-at="2019-10-03T07:31:36Z" finished-at="2019-10-03T07:31:47Z">
+        </test-method>
+        <test-method status="PASS" signature="closeSelenium()[pri:0, instance:com.selvi.tests.AmazonTest@1efbd816]" name="closeSelenium" is-config="true" duration-ms="1857" started-at="2019-10-03T07:31:47Z" finished-at="2019-10-03T07:31:49Z">
+        </test-method>
+        <test-method status="PASS" signature="closeSelenium()[pri:0, instance:com.selvi.tests.AppTest@66d2e7d9]" name="closeSelenium" is-config="true" duration-ms="951" started-at="2019-10-03T07:31:49Z" finished-at="2019-10-03T07:31:49Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
