@@ -22,7 +22,7 @@ public class AmazonTest {
     @Test
     public void testSearch(){
         driver.get("http://www.amazon.com");		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		Assert.assertEquals(driver.getTitle(), "Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more");
     }
